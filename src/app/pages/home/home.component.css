@@ -11,6 +11,8 @@
   z-index: 999;
   transition: 0.3s ease-in-out;
 }
+
+
 .scrolled {
   z-index: 999;
   /* background-color: rgba(86, 86, 86, 0.503); */

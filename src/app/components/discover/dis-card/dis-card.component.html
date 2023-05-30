@@ -1,13 +1,23 @@
 <div class="disc-card-container">
   <mat-card class="disc-card" *ngFor="let city of countByCity">
-    <img
-      mat-card-image
-      [src]="getImageUrl(city.City)"
-      alt="Photo of {{ city.City }}"
-    />
-    <mat-card-content>
-      <h3>{{ city.City }}</h3>
-      <p>{{ city.Count }} Properties</p>
-    </mat-card-content>
+    <li class="cards_item">
+      <div class="card">
+        <div class="card_image">
+
+          <img  [src]="getImageUrl(city.City)"
+          alt="Photo of {{ city.City }}" />
+         
+         
+        </div>
+        
+      </div>
+
+    </li>
+    <div class="prop-details">
+      <span class="card_price">{{ city.City }}</span>
+      <!-- <span class="card_count">{{ city.Count }} Properties</span> -->
+    </div>
   </mat-card>
+
+  
 </div>
